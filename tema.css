@@ -1,0 +1,157 @@
+/* Variables de tema para modo claro (default) */
+:root {
+    --primary-color: #2563eb;
+    --primary-light: #3b82f6;
+    --text-color: #1e293b;
+    --text-light: #64748b;
+    --bg-color: #f1f5f9;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+    --sidebar-bg: #1e293b;
+    --sidebar-text: #e2e8f0;
+    --sidebar-active: #3b82f6;
+    --header-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #e2e8f0;
+    --input-text: #1e293b;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --footer-bg: #ffffff;
+    --footer-text: #64748b;
+    --transition: all 0.3s ease;
+}
+
+/* Tema oscuro */
+[data-theme="oscuro"] {
+    --primary-color: #3b82f6;
+    --primary-light: #60a5fa;
+    --text-color: #e2e8f0;
+    --text-light: #94a3b8;
+    --bg-color: #1e293b;
+    --card-bg: #0f172a;
+    --border-color: #334155;
+    --sidebar-bg: #0f172a;
+    --sidebar-text: #e2e8f0;
+    --sidebar-active: #3b82f6;
+    --header-bg: #0f172a;
+    --input-bg: #1e293b;
+    --input-border: #334155;
+    --input-text: #e2e8f0;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --footer-bg: #0f172a;
+    --footer-text: #94a3b8;
+}
+
+/* Aplicar estilos base a todo el documento */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+/* Estilos para inputs y formularios */
+input, select, textarea, button {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
+    transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Estilos para tablas */
+table {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-color);
+}
+
+/* Estilos para enlaces */
+a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+/* Estilos para el footer */
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 30px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+/* Estilos para tarjetas */
+.card, .stat-card, .task-card, .info-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+/* Estilos para botones */
+.btn, .btn-primary, .btn-secondary, .btn-danger, .btn-success {
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+}
+
+.btn-secondary {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    transition: var(--transition);
+}
+
+/* Estilos para el encabezado principal */
+.main-header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+/* Estilos para notificaciones */
+.notification-dropdown {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.notification-item {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.notification-item:hover {
+    background-color: var(--bg-color);
+}

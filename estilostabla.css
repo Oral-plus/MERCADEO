@@ -1,0 +1,27 @@
+.container {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  table {
+    width: 100%;
+
+    overflow-x: visible;
+    white-space: normal;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 992px) {
+    th, td {
+      padding: 0.3rem;
+      font-size: 0.8rem;
+    }
+    
+  }
